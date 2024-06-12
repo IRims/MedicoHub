@@ -14,15 +14,13 @@
       }
     }
   ],
-  "routes": [
-    {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "Hello/wsgi.py"
-    }
-  ]
-}
+ 
+      "routes":
+       [
+        { "source": "/(.*)",
+         "destination": "/" }
+      ] 
+    
+
+ }
 
