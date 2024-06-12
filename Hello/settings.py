@@ -10,6 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+
+
+
+
 from pathlib import Path
 import os
 
@@ -27,7 +31,8 @@ SECRET_KEY = 'django-insecure-lqw!+eb2vp+q!3fcd@t$n!4vfjc0o)+%0n2c#!6bdy20jh5rzn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+
+ALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1','localhost ']
 
 
 # Application definition
@@ -78,10 +83,21 @@ WSGI_APPLICATION = 'Hello.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD':'sFbBARAybMWnFmEFKKBJsneFOZPNGStL',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT': '27085',
     }
 }
 
