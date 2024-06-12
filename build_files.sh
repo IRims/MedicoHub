@@ -1,5 +1,4 @@
 
-enviro\Static\Activate
 
 pip3 install -r requirements.txt
 
