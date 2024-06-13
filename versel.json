@@ -4,16 +4,26 @@
       {
         "src": "Hello/wsgi.py",
         "use": "@vercel/python",
+<<<<<<< HEAD
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+=======
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.12" }
+>>>>>>> 0234fabd671b065360c2a71749ba2052f8e2a9b1
       },
       {
         "src": "build_files.sh",
         "use": "@vercel/static-build",
         "config": {
+<<<<<<< HEAD
           "distDir": "staticfiles_build"
         }
       }
 <<<<<<< HEAD:vercel.json
+=======
+          "distDir": "collected_static"
+        }
+      }
+>>>>>>> 0234fabd671b065360c2a71749ba2052f8e2a9b1
     ],
     "routes": [
       {
@@ -28,6 +38,7 @@
   }
   
   
+<<<<<<< HEAD
 =======
     }
   ],
@@ -42,3 +53,5 @@
  }
 
 >>>>>>> 642b61ffcdf33b2adc10cd70c6f23af2a43561a1:versel.json
+=======
+>>>>>>> 0234fabd671b065360c2a71749ba2052f8e2a9b1
