@@ -13,6 +13,7 @@
           "distDir": "staticfiles_build"
         }
       }
+<<<<<<< HEAD:vercel.json
     ],
     "routes": [
       {
@@ -27,3 +28,17 @@
   }
   
   
+=======
+    }
+  ],
+ 
+      "routes":
+       [
+        { "source": "/(.*)",
+         "destination": "/" }
+      ] 
+    
+
+ }
+
+>>>>>>> 642b61ffcdf33b2adc10cd70c6f23af2a43561a1:versel.json
